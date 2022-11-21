@@ -3,10 +3,10 @@ import { CatsService } from './cats.service';
 
 @Controller('cats')
 export class CatsController {
-    constructor(private readonly catsService: CatsService) {}
+  constructor(private readonly catsService: CatsService) {}
 
-    @Get()
-    getHello(): string {
-        return this.catsService.getHello();
-    }
+  @Get()
+  getHello(): string {
+    return this.catsService.getHello();
+  }
 }
